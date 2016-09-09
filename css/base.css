@@ -1,11 +1,19 @@
 body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,table{margin:0;padding:0;}
 /*reset end*/
 html{font-size: 20px;}
+<<<<<<< Updated upstream
 body{font-family:"微软雅黑";}
 button,input{font-family: "微软雅黑";outline:none;border:0;}
 img{border: 0;width:100%;display: block;}
 ul{list-style: none;}
-a{text-decoration: none;color:#666;}
+a{text-decoration: none;color:#333;}
+=======
+body{font-family:"\5FAE\8F6F\96C5\9ED1";}
+button,input{font-family: "微软雅黑";outline:none;border:0;}
+a img{border: 0;}
+ul{list-style: none;}
+a{text-decoration: none;color:#333;}
+>>>>>>> Stashed changes
 .relative{position: relative;}
 .absolute{position: absolute;}
 .fr{float: right;}
