@@ -1,0 +1,20 @@
+.claim_h1{font-size: 0.6rem;font-weight: normal; height:1.975rem; line-height:1.975rem;  padding-left: 0.7rem;}
+.claim_border_bottom{border-bottom: 0.025rem solid #E5E5E5;}
+.claim_content{width: 100%}
+.claim_content_h2{ height: 2.5rem;padding-left: 0.7rem;line-height: 3.25rem; font-size: 0.55rem; font-weight: normal;}
+.claim_mark{ margin-left: 0.75rem;}
+.claim_mark span{ color: #FF6600;}
+.claim_row,.claim_line{ background-color: #F5F5F5;height:1.5rem; font-size: 0.45rem;}
+.claim_line{ background-color: #fff;}
+.claim_row div,.claim_line div{height:1.5rem; line-height: 1.5rem}
+.claim_left,.claim_left_style{ width: 4.7rem; background-color: #E7F3F5; text-align: right; padding-right:1.075rem;}
+.claim_left_style{background-color: #F0FDFF;}
+.claim_right{ padding-left: 0.95rem;}
+.claim_leftStateImg,.claim_rightStateImg{ height:5.825rem;width: 50%; }
+.claim_leftStateImg{background:#F5F5F5 url(../images/claim_03.png) right 1.775rem no-repeat;background-size: 5.625rem 2.675rem;}
+.claim_rightStateImg{background:#F5F5F5 url(../images/claim_04.png) left 1.775rem no-repeat;background-size: 5.375rem 2.675rem;}
+.claim_wrap{ border-top: 0.025rem solid #E5E5E5;}
+.claim_wrap_row{padding-top: 0.575rem; padding-bottom:0.95rem; width: 14.5rem;margin: 0 auto;}
+.claim_wrap_p{ line-height: 0.9rem;font-size: 0.5rem;}
+.claim_file{display: block; width: 3.325rem;height: 0.975rem; margin-top: 0.25rem; margin-left: 0.025rem; background-color: #01C1D6; font-size: 0.475rem; color: #fff;}
+.claim_return{width: 4.125rem;margin-top: 0.15rem;height: 1.45rem; text-align: center; line-height: 1.45rem;background-color: #FF0198;font-size: 0.55rem; color: #fff;}
