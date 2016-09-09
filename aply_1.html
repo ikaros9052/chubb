@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>aply_1</title>
+    <script src="js/rem.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/base.css">
+  	<link rel="stylesheet" type="text/css" href="css/aply_2.css">
+  	<style type="text/css">
+		.aply_2 .box2 .sex{margin-left: 1.2rem;margin-right: 0;}
+  	</style>
 </head>
 <body>
-
+<!--content start-->
+<div class="aply_2" >
+	<form>
+		<h2>
+			<span class="span_a">理赔申请：</span>
+			<span class="span_b">报案人信息</span>
+			<span class="span_c"><img src="images/my_2_bg.png" /></span>
+			<span class="span_d">账户信息</span>
+			<span class="span_c"><img src="images/my_2_bg.png" /></span>
+			<span class="span_d">出险信息</span>
+		</h2>
+		<div class="box">
+			<label>报案人信息：</label>
+			<input type="text" class="input_a" />
+		</div>
+		<!-- <div class="box">
+			<label>账户信息：</label>
+			<input type="text" class="input_a" />
+		</div> -->
+		<div class="box2 box">
+			<label class="label_b"><span>*</span>报案人姓名</label>
+			<input type="text" class="input_a" placeholder="" style="color:red" />
+		</div>
+		<div class="box2 box">
+			<label class="label_b"><span>*</span>保险产品选择</label>
+			<div class="sex"><a href="#" class="a_1"></a>苏宁客户</div>
+            <div class="sex"><a href="#" class="a_1"></a>非苏宁客户</div>
+		</div>
+		<div class="box2 box">
+			<label class="label_b"><span>*</span>手机号码：</label>
+			<input type="text" class="input_a" />
+		</div>
+		<div class="box2 box">
+			<label class="label_b">固定电话</label>
+			<input type="text" class="input_a" />
+		</div>
+		<div class="box2 box">
+			<label class="label_b">电子邮箱</label>
+			<input type="text" class="input_a" />
+		</div>
+		<button class="btn_b">下一步</button>
+	</form>
+</div>
+<!--content end-->
 </body>
 </html>
