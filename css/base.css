@@ -1,0 +1,18 @@
+body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,table{margin:0;padding:0;}
+/*reset end*/
+html{font-size: 20px;}
+body{font-family:"微软雅黑";}
+button,input{font-family: "微软雅黑";outline:none;border:0;}
+img{border: 0;width:100%;display: block;}
+ul{list-style: none;}
+a{text-decoration: none;color:#666;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{content: "\200B";display: block;height: 0;clear: both;}
+.clearfix{*zoom: 1;}
+/*common end*/
+.logo{background: url(../images/index_03.png) no-repeat;background-size: 3.775rem 1.175rem;height: 1.175rem;width: 3.775rem;}
+.head{}
+.head img{float: right;width:1.15rem;height: 0.85rem;}
