@@ -23,6 +23,7 @@ a{text-decoration: none;color:#333;}
 .buy{width: 15.2rem;color: #fff;margin-bottom: 1.6rem;}
 .buy h1{font-size: 0.5rem;font-weight: normal;margin-bottom: 0.4rem;margin-left: 0.55rem;}
 .buy p{margin-left: 0.55rem;}
+.buy .first a{width: 48%;display: inline-block;margin-right: 0}
 .line{border-bottom: 1px solid #80E0EB;margin-left: 0.4rem;}
 .buy p a{font-size: 0.45rem;color: #fff;margin-right: 1rem;}
 .call{margin: 0 auto;width: 14.5rem;}
