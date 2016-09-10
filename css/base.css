@@ -5,6 +5,7 @@ body{font-family:"\5FAE\8F6F\96C5\9ED1"; color: #333;}
 button,input{font-family: "\5FAE\8F6F\96C5\9ED1";outline:none;border:0;}
 img{border: 0;}
 ul{list-style: none;}
+li{list-style:none;}
 a{text-decoration: none;color:#333;}
 .relative{position: relative;}
 .absolute{position: absolute;}

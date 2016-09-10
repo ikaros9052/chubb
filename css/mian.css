@@ -6,3 +6,24 @@
 .index .main li a{font-size: 0.55rem;margin: 0.65rem 0 0.65rem 0.55rem;float: left;}
 .index .main img{width: 0.3rem;height: 0.55rem;float: right;margin: 0.65rem 0.725rem 0 0;}
 /*index end*/
+
+.warr{background-color: #eee;padding:0.375rem 0 0.875rem 0;}
+.warr div{background-color: #fff;}
+.warr-pd{padding: 0 0.75rem;}
+.warr h1{font-size: 0.6rem;line-height: 1.975rem;font-weight: normal;}
+.warr h2{font-size: 0.55rem;line-height: 2.0rem;font-weight: normal;}
+.warr .top span{font-size: 0.45rem;color: #666;line-height: 1.975rem;padding-left: 0.5rem;}
+.warr .bor-b{border-bottom:0.025rem solid #e5e5e5;}
+.warr .pull-down img{width: 0.75rem;margin-top: 0.75rem;}
+.warr .pull-down dl{font-size: 0.45rem;height: 1.5rem;line-height: 1.5rem;}
+.warr .pull-down dl dt{width: 4.7rem;text-align: right;padding-right: 1.075rem;}
+.warr .pull-down dl dd{padding-left: 1.525rem;width: 8.7rem;}
+.warr .pull-down .dl-1 dt{background-color: #e7f3f5;}
+.warr .pull-down .dl-1 dd{background-color: #f5f5f5;}
+.warr .pull-down .dl-2 dt{background-color: #f0fdff;}
+.warr .boot-btn li{float: left;}
+.warr .boot-btn a{font-size: 0.45rem;width:3.1rem;height:1.4rem;float: left;border: 0.025rem solid #ff0198;line-height: 1.4rem;text-align: center;margin-right:0.5625rem;color: #ff0198;overflow: hidden;}
+.warr .boot-btn .active{margin: 0;background-color: #ff0198;color: #fff;font-size:0.55rem;}
+.warr .boot-btn{padding: 0.725rem 0 1.05rem 0;}
+
+
