@@ -6,8 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>warr</title>
-
 	<script type="text/javascript" src="js/rem.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		$(function(){
+			$("dl").hide();	
+			$(".xia-la").click(function(){
+				var $two=$(this).nextAll("dl");
+				if ($two.is(":visible")) {
+					$two.slideUp(300);
+					$(this).find('img').attr('src','images/jtB.png');
+				} else{
+					$two.slideDown(300);
+					$(this).find('img').attr('src','images/jtT.png');
+				}
+			})
+		})
+	</script>
 	<link type="text/css" rel="stylesheet" href="css/base.css">
 	<link type="text/css" rel="stylesheet" href="css/mian.css">
 </head>
@@ -31,10 +46,10 @@
 		<!--top-->
 		<div class="bor-b">
 			<div class="pull-down">
-				<div class="clearfix warr-pd">
+				<div class="clearfix warr-pd xia-la">
 					<h2 class="fl">保单及险种信息</h2>
-					<a href="#" class="fr">
-						<img src="images/jtT.png">
+					<a href="#" class="fr momBtn">
+						<img src="images/jtB.png">
 					</a>
 				</div>
 				<dl class="clearfix dl-1">
@@ -81,10 +96,10 @@
 		</div>
 		<!--保单及险种信息-->
 		<div class="pull-down">
-			<div class="clearfix warr-pd">
+			<div class="clearfix warr-pd xia-la">
 				<h2 class="fl">投保人信息</h2>
-				<a href="#" class="fr">
-					<img src="images/jtT.png">
+				<a href="#" class="fr momBtn">
+					<img src="images/jtB.png">
 				</a>
 			</div>
 			<dl class="clearfix dl-1">
@@ -111,10 +126,10 @@
 		<!--投保人信息-->
 		<div class="bor-b">
 			<div class="pull-down">
-				<div class="clearfix warr-pd">
+				<div class="clearfix warr-pd xia-la">
 					<h2 class="fl">受益人信息</h2>
-					<a href="#" class="fr">
-						<img src="images/jtT.png">
+					<a href="#" class="fr momBtn">
+						<img src="images/jtB.png">
 					</a>
 				</div>
 				<dl class="clearfix dl-1">
