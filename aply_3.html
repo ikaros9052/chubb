@@ -6,6 +6,7 @@
     <script src="js/rem.js"></script>
   	<link rel="stylesheet" type="text/css" href="css/base.css">
   	<link rel="stylesheet" type="text/css" href="css/aply_2.css">
+
 </head>
 <body>
 <!--header start-->
@@ -18,7 +19,7 @@
 <!--header end-->
 <!--content start-->
 <div class="aply_2">
-	<form>
+	<form class="form" action="" method="post">
 		<h2>
 			<span class="span_a">理赔申请：</span>
 			<span class="span_b">报案人信息</span>
@@ -28,69 +29,70 @@
 			<span class="span_b">出险信息</span>
 		</h2>
 		<div class="box">
-			<label>报案人信息：</label>
-			<input type="text" class="input_a" />
+			<label for="">报案人信息：</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：时间/地点" />
 			<button class="btn">修改</button>
 		</div>
 		<div class="box">
-			<label>账户信息：</label>
-			<input type="text" class="input_a" />
+			<label for="">账户信息：</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：编号/姓名" />
 			<button class="btn">修改</button>
 		</div>
 		<div class="box">
-			<label>出险信息：</label>
-			<input type="text" class="input_a" />
+			<label for="">出险信息：</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：时间/地点"/>
 			
 		</div>
 		<div class="box2 box">
-			<label class="label_b"><span>*</span>出险人姓名</label>
-			<input type="text" class="input_a" />
+			<label class="label_b" for=""><span>*</span>出险人姓名</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"
+			/>
 		</div>
 		<div class="box2 box">
-			<label class="label_b"><span>*</span>手机号码</label>
-			<input type="text" class="input_a" />
+			<label class="label_b" for=""><span>*</span>手机号码</label>
+			<input type="text" class="input_a input_b" name="" id="" value="" placeholder="例：18588888888" datatype="m" errormsg="请输入手机号码不存在，请正确输入"/>
 		</div>
 		<div class="box2 box">
-			<label class="label_b"><span>*</span>与报案人关系</label>
-			<input type="text" class="input_a" />
+			<label class="label_b" for=""><span>*</span>与报案人关系</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"/>
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>身份证号</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a" name="" id="" value="" placeholder="请输入正确的证件号码" datatype="/^[A-Za-z0-9_-]+$/" errormsg="请输入正确的证件号码"/>
 		</div>
 		<div class="box2 box">
-			<label class="label_b"><span>*</span>出险人生日</label>
-			<input type="text" class="input_a" />
+			<label class="label_b" for=""><span>*</span>出险人生日</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"/>
 		</div>
 		<div class="box2 box clearfix">
 			<label class="label_b "><span>*</span>出险人性别</label>
-			<div class="sex"><a href="#" class="a_1"></a>男</div>
-             <div class="sex"><a href="#" class="a_1"></a>女</div>
+			<div class="sex"><a href="script:;" class="a_1 active1"></a>男</div>
+             <div class="sex"><a href="script:;" class="a_1"></a>女</div>
             
 		</div>
 		<div class="box2 box">
-			<label class="label_b"><span>*</span>出险时间</label>
-			<input type="text" class="input_a" />
+			<label class="label_b" for=""><span>*</span>出险时间</label>
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"/>
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>出险地点</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"/>
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>申请赔付金额</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a" name="" id="" datatype="zh2-4" placeholder="例：张三"/>
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>理赔类型</label>
-			<div class="sex"><a href="#" class="a_1"></a>意外事故</div>
-             <div class="sex"><a href="#" class="a_1"></a>意外伤残</div>
+			<div class="sex sex-a"><a href="script:;" class="a_1 active1"></a>意外事故</div>
+             <div class="sex sex-a"><a href="script:;" class="a_1"></a>意外伤残</div>
 		</div>
 		<div class="box2 box box3" >
 			<label class="label_b"><span>*</span>出险事故描述</label>
-			<textarea></textarea>
+			<textarea name="" id="" datatype="*" placeholder="事故描述" nullmsg="不能为空"></textarea>
 		</div>
 
-		<button class="btn_b">提交申请</button>
+		<button class="btn_b form_button">提交申请</button>
 	</form>
 </div>
 <!--content end-->
@@ -119,6 +121,44 @@
 	</div>
 
 <!--footer end-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/validform.min.js"></script>
+<script>
+	$(function(){
+        $(".a_1").click(function(){
+           $(this).addClass("active1").parents(".sex").siblings(".sex").children().removeClass("active1");
+        })
+      });
+	// $(function(){
+	// 			$('.btn_submit').click(function() {
+	// 				$('.form').submit()
+	// 				})
+	// 				var valid = $(".form").Validform({
+	// 					tiptype: function(msg, o, cssctl) {
+	// 						if(o.type != 2) {
+	// 							o.obj.val(msg);
+	// 						}
+	// 					},
+	// 					datatype: {
+	// 						"zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
 
+	// 					}
+	// 				});
+	// 				valid.tipmsg.w["zh2-4"] = "请输入2到4个中文字符！";
+	// 				$('.form input').focus(function(){
+	// 					$(this).val('');
+	// 			})
+	// })
+	$(".form").Validform({
+		tiptype:function(msg,o,cssctl){
+			if(!o.obj.is("form")){
+				var objtip=o.obj.siblings(".Validform_checktip");
+				cssctl(objtip,o.type);
+				objtip.text(msg);
+			}
+
+		}
+	});
+</script>
 </body>
 </html>
