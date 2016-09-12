@@ -71,3 +71,14 @@ text-overflow:ellipsis;}
 .navList_up{background: #4B4E53 url(../images/icon_nav_up.png) 1.0rem no-repeat;background-size: 0.425rem 0.25rem;}
 .navList dd{margin: 0 0.675rem; border-top:0.025rem solid #474646; margin-top: -0.025rem; display: none; color: #ccc;}
 /*navList end*/
+.my_warr .padding30{padding:0 0.75rem;}
+.my_warr{width:16.0rem;margin:0 auto;font-size:0.6rem;}
+.my_warr h1{font-size:0.6rem;height:2rem; line-height: 2rem;border-bottom:0.025rem solid #E4E4E4;color:#323232;font-weight:normal;}
+.my_warr .view{padding:0.95rem 0.75rem;}
+.my_warr_view p{width: 7.25rem;font-size:0.5rem;color:#949494;padding:0.4rem 0;}
+.my_warr_view .fr{width:5.2rem;}
+.my_warr_view{padding:0.725rem 0.75rem;border-bottom:0.025rem solid #E4E4E4;}
+.my_warr_view label{float:left;width:2.6rem;text-align:right;}
+.my_warr_view span{color:#3C3C3C;}
+.my_warr_btn{float:right;width:3.15rem;height:1.175rem;line-height:1.175rem;text-align:center;color:#fff;background:#03C0D5;}
+/*my_warr*/
