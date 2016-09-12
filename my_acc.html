@@ -80,17 +80,22 @@
 				</div>
 				<div class="claim_line my_acc_line">
 					<div class="claim_left_style my_acc_height fl">联系地址</div>
-					<div class="claim_right my_acc_height fl">
-						<div class="my_acc_add clearfix">
-							<ul>
-								<li>江西省<i></i></li>
-							</ul>
-							<ul>
-								<li>南昌市<i></i></li>
-							</ul>
+					<div id="city" class="claim_right my_acc_height fl">
+						<div class="my_acc_add m_zlxg fl" id="shenfen">
+							<p title="">选择省份</p>
+							<div class="m_zlxg2" style="display:none;">
+								<ul></ul>
+							</div>
 						</div>
-						<div><input type="text"></div>
+						<div class="my_acc_add m_zlxg fl" id="chengshi">
+							<p title="">选择城市</p>
+							<div class="m_zlxg2" style="display:none;">
+								<ul></ul>
+							</div>
+						</div>
+						<input style="clear:both" type="text" value="">
 					</div>
+					<!-- end city -->
 				</div>
 				<div class="claim_row clearfix">
 					<div class="claim_left fl">邮编</div>
@@ -126,5 +131,32 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+	    (function(doc, win) {
+	        var docEl = doc.documentElement,
+	                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	                recalc = function() {
+	                    var clientWidth = docEl.clientWidth;
+	                    if(!clientWidth) return;
+	                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+	                };
+	        if(!doc.addEventListener) return;
+	        win.addEventListener(resizeEvt, recalc, false);
+	        doc.addEventListener('DOMContentLoaded', recalc, false);
+	    })(document, window);
+	</script>
+	<script src="js/jquery.mmenu.all.min.js"></script>
+	<script src="js/address.js"></script>
+	<script>
+	    $(document).ready(function() {
+	        $("nav#menu").mmenu({
+	            offCanvas:{position:"right"},
+	            slidingSubmenus: false
+	        });
+
+	        $("#city").sjld("#shenfen","#chengshi");
+
+	    });
+	</script>
 </body>
 </html>
