@@ -18,3 +18,12 @@
 .claim_wrap_p{ line-height: 0.9rem;font-size: 0.5rem;}
 .claim_file{display: block; width: 3.325rem;height: 0.975rem; margin-top: 0.25rem; margin-left: 0.025rem; background-color: #01C1D6; font-size: 0.475rem; color: #fff;}
 .claim_return{width: 4.125rem;margin-top: 0.15rem;height: 1.45rem; text-align: center; line-height: 1.45rem;background-color: #FF0198;font-size: 0.55rem; color: #fff;}
+
+.wrap_sum{ background-color: #E9E9E9;width: 100%;}
+.navList_content{ position: absolute;right:0px; background-color: #fff; width: 100%;}
+.navList_wrap{ height: 100%; position:absolute;right: 0px; top: 0px; width: 8.0rem; background-color: #4B4E53;}
+.navList{background-color: #272626; border-bottom:0.025rem solid #5D6065;}
+.navList dt,.navList dd{text-align: right;font-size: 0.5rem;height: 1.7rem; line-height:1.7rem; color: #fff;}
+.navList_head{padding: 0 0.675rem;background: #4B4E53 url(../images/icon_nav_down.png) 1.0rem no-repeat; background-size: 0.425rem 0.25rem;}
+.navList_up{background: #4B4E53 url(../images/icon_nav_up.png) 1.0rem no-repeat;}
+.navList dd{margin: 0 0.675rem; border-top:0.025rem solid #474646; margin-top: -0.025rem; display: none; color: #ccc;}
