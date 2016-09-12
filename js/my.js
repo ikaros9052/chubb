@@ -1,7 +1,7 @@
 $(function(){
   $(".btn").click(function(){
       if($(".navList_content").css("right")=="0px"){
-        $(".navList_content").animate({"right":"11.2rem"});
+        $(".navList_content").animate({"right":"8rem"});
         $(".wrap_sum").css("overflow","hidden");
       }else{
         $(".navList_content").animate({"right":"0px"});
