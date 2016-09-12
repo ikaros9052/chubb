@@ -7,21 +7,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>warr</title>
 	<script type="text/javascript" src="js/rem.js"></script>
-	<script src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script>
 		$(function(){
-			$("dl").hide();	
 			$(".xia-la").click(function(){
-				var $two=$(this).nextAll("dl");
-				if ($two.is(":visible")) {
-					$two.slideUp(300);
-					$(this).find('img').attr('src','images/jtB.png');
-				} else{
-					$two.slideDown(300);
-					$(this).find('img').attr('src','images/jtT.png');
-				}
-			})
-		})
+	            var $obj=$(this).nextAll("dl");
+	            if ($obj.is(":visible")) {
+	                $obj.slideUp(300);
+	                $(this).children("a").removeClass('momBtnT');
+	                $(this).children("a").addClass('momBtn');
+	            } else{
+	                $obj.slideDown(300);
+	                $(this).children("a").removeClass('momBtn');
+	                $(this).children("a").addClass('momBtnT');
+	            }
+	        })
+	    })
 	</script>
 	<link type="text/css" rel="stylesheet" href="css/base.css">
 	<link type="text/css" rel="stylesheet" href="css/mian.css">
