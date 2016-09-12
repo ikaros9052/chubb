@@ -125,24 +125,23 @@
 
 	<script>
 		  	$(function() {
-				// $('.btn_submit').click(function() {
-				// 	$('.form').submit()
-				// })
-				// var valid = $(".form").Validform({
-				// 	tiptype: function(msg, o, cssctl) {
-				// 		if(o.type != 2) {
-				// 			o.obj.val(msg);
-				// 		}
-				// 	},
-				// 	datatype: {
-				// 		"zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
-				// 	}
-				// });
-				// valid.tipmsg.w["zh2-4"] = "请输入2到4个中文字符！";
-				// $('.form input').focus(function(){
-				// 	$(this).val('');
-				// })
-		  	
+				$('.btn_submit').click(function() {
+					$('.form').submit()
+				})
+				var valid = $(".form").Validform({
+					tiptype: function(msg, o, cssctl) {
+						if(o.type != 2) {
+							o.obj.val(msg);
+						}
+					},
+					datatype: {
+						"zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
+					}
+				});
+				valid.tipmsg.w["zh2-4"] = "请输入2到4个中文字符！";
+				$('.form input').focus(function(){
+					$(this).val('');
+				})
 			})
 		</script>
 <!--footer end-->
