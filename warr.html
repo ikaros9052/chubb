@@ -8,22 +8,6 @@
     <title>warr</title>
 	<script type="text/javascript" src="js/rem.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script>
-		$(function(){
-			$(".xia-la").click(function(){
-	            var $obj=$(this).nextAll("dl");
-	            if ($obj.is(":visible")) {
-	                $obj.slideUp(300);
-	                $(this).children("a").removeClass('momBtnT');
-	                $(this).children("a").addClass('momBtn');
-	            } else{
-	                $obj.slideDown(300);
-	                $(this).children("a").removeClass('momBtn');
-	                $(this).children("a").addClass('momBtnT');
-	            }
-	        })
-	    })
-	</script>
 	<link type="text/css" rel="stylesheet" href="css/base.css">
 	<link type="text/css" rel="stylesheet" href="css/mian.css">
 </head>
