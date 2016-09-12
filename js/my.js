@@ -1,5 +1,5 @@
 $(function(){
-  $(".btn").click(function(){
+  $(".Open").click(function(){
       if($(".navList_content").css("right")=="0px"){
         $(".navList_content").animate({"right":"8rem"});
         $(".wrap_sum").css("overflow","hidden");

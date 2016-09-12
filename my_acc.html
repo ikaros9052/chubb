@@ -4,106 +4,126 @@
     <meta charset="UTF-8">
     <title>我的账户</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/my_warr.css">
     <script src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/my.js"></script>
 </head>
 <body>
-	<div class="body-main">
-		<div class="head-wrap">
-			<div class="head margin clearfix">
-				<div class="logo fl"></div>
-				<img src="images/tel.svg">
-			</div>
-		</div>
-		<!-- end head -->
-		<div class="my_warr">
-			<h1 class="padding30">我的账户</h1>
-			<div class="claim_row">
-				<div class="claim_left fl">用户名</div>
-				<div class="claim_right fl">chubu289</div>
-			</div>
-			<div class="claim_line">
-				<div class="claim_left_style fl">客户姓名</div>
-				<div class="claim_right fl">李明</div>
-			</div>
-			<div class="claim_row">
-				<div class="claim_left fl">性别</div>
-				<div class="claim_right fl">男</div>
-			</div>
-			<div class="claim_line">
-				<div class="claim_left_style fl">出生日期</div>
-				<div class="claim_right fl">0311</div>
-			</div>
-			<div class="claim_row">
-				<div class="claim_left fl">证件类型</div>
-				<div class="claim_right fl">护照</div>
-			</div>
-			<div class="claim_line">
-				<div class="claim_left_style fl">证件号码</div>
-				<div class="claim_right fl">370402199803178921</div>
-			</div>
-			<div class="claim_row">
-				<div class="claim_left fl">邮箱</div>
-				<div class="claim_right fl"><input type="text" placeholder="8888@qq.com"></div>
-			</div>
-			<div class="claim_line">
-				<div class="claim_left_style fl">固定电话</div>
-				<div class="claim_right fl">010-888888</div>
-			</div>
-			<div class="claim_row">
-				<div class="claim_left fl">手机</div>
-				<div class="claim_right fl clearfix">
-					<p class="fl">1388888888<span class="prove">已认证</span></p>
-					<a class="my_warr_btn fr" href="javascript:">修改</a>
+	<div class="navList_wrap">
+    	<dl class="navList">
+    		<dt class="navList_head">保险产品</dt>
+    		<dd>“延保＋”人身意外保障</dd>
+    		<dd>意外保险</dd>
+    		<dd>家财险</dd>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">自助服务</dt>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">常见问题</dt>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">关于安达</dt>
+    	</dl>
+    </div>
+    <!-- end navList_wrap -->
+    <div class="navList_content">
+		<div class="body-main">
+			<div class="head-wrap">
+				<div class="head margin clearfix">
+					<div class="logo fl"></div>
+					<a href="#" class="Open"><img src="images/tel.svg"></a>
 				</div>
 			</div>
-			<div class="claim_line my_acc_line">
-				<div class="claim_left_style my_acc_height fl">联系地址</div>
-				<div class="claim_right my_acc_height fl">
-					<div class="my_acc_add clearfix">
-						<ul>
-							<li>江西省<i></i></li>
-						</ul>
-						<ul>
-							<li>南昌市<i></i></li>
-						</ul>
+			<!-- end head -->
+			<div class="my_warr">
+				<h1 class="padding30">我的账户</h1>
+				<div class="claim_row">
+					<div class="claim_left fl">用户名</div>
+					<div class="claim_right fl">chubu289</div>
+				</div>
+				<div class="claim_line">
+					<div class="claim_left_style fl">客户姓名</div>
+					<div class="claim_right fl">李明</div>
+				</div>
+				<div class="claim_row">
+					<div class="claim_left fl">性别</div>
+					<div class="claim_right fl">男</div>
+				</div>
+				<div class="claim_line">
+					<div class="claim_left_style fl">出生日期</div>
+					<div class="claim_right fl">0311</div>
+				</div>
+				<div class="claim_row">
+					<div class="claim_left fl">证件类型</div>
+					<div class="claim_right fl">护照</div>
+				</div>
+				<div class="claim_line">
+					<div class="claim_left_style fl">证件号码</div>
+					<div class="claim_right fl">370402199803178921</div>
+				</div>
+				<div class="claim_row">
+					<div class="claim_left fl">邮箱</div>
+					<div class="claim_right fl"><input type="text" placeholder="8888@qq.com"></div>
+				</div>
+				<div class="claim_line">
+					<div class="claim_left_style fl">固定电话</div>
+					<div class="claim_right fl">010-888888</div>
+				</div>
+				<div class="claim_row">
+					<div class="claim_left fl">手机</div>
+					<div class="claim_right fl clearfix">
+						<p class="fl">1388888888<span class="prove">已认证</span></p>
+						<a class="my_warr_btn fr" href="javascript:">修改</a>
 					</div>
-					<div><input type="text"></div>
+				</div>
+				<div class="claim_line my_acc_line">
+					<div class="claim_left_style my_acc_height fl">联系地址</div>
+					<div class="claim_right my_acc_height fl">
+						<div class="my_acc_add clearfix">
+							<ul>
+								<li>江西省<i></i></li>
+							</ul>
+							<ul>
+								<li>南昌市<i></i></li>
+							</ul>
+						</div>
+						<div><input type="text"></div>
+					</div>
+				</div>
+				<div class="claim_row clearfix">
+					<div class="claim_left fl">邮编</div>
+					<div class="claim_right fl clearfix">123456</div>
 				</div>
 			</div>
-			<div class="claim_row clearfix">
-				<div class="claim_left fl">邮编</div>
-				<div class="claim_right fl clearfix">123456</div>
+			<div class="my_acc_btn clearfix">
+				<a class="save" href="javascript:">保存</a>
+				<a class="cancel" href="javascript:">取消</a>
 			</div>
-		</div>
-		<div class="my_acc_btn clearfix">
-			<a class="save" href="javascript:">保存</a>
-			<a class="cancel" href="javascript:">取消</a>
-		</div>
-		<!-- end my_warr -->
-		<div class="foot">
-			<div class="buy">
-				<h1>保险购买</h1>
-				<div class="line"></div>
-				<p><a href="">“爱环球”境外旅行保障计划</a><a href="">“爱环球”境外旅行保障计划</a><br><a href="">“爱环球”境外旅行保障计划</a></p>
+			<!-- end my_warr -->
+			<div class="foot">
+				<div class="buy">
+					<h1>保险购买</h1>
+					<div class="line"></div>
+					<p><a href="">“爱环球”境外旅行保障计划</a><a href="">“爱环球”境外旅行保障计划</a><br><a href="">“爱环球”境外旅行保障计划</a></p>
+				</div>
+				<div class="buy">
+					<h1>自主服务</h1>
+					<div class="line"></div>
+					<p><a href="">理赔报案</a><a href="">保单查询</a><a href="">FAQ</a></p>
+				</div>
+				<div class="buy">
+					<h1>关于安达</h1>
+					<div class="line"></div>
+					<p><a href="">公司介绍</a><a href="">新闻中心</a><a href="">信息披露</a></p>
+				</div>
+				<div class="call">
+					<img src="images/index_ff.png">
+				</div>
+				<div class="long"></div>
+				<p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
 			</div>
-			<div class="buy">
-				<h1>自主服务</h1>
-				<div class="line"></div>
-				<p><a href="">理赔报案</a><a href="">保单查询</a><a href="">FAQ</a></p>
-			</div>
-			<div class="buy">
-				<h1>关于安达</h1>
-				<div class="line"></div>
-				<p><a href="">公司介绍</a><a href="">新闻中心</a><a href="">信息披露</a></p>
-			</div>
-			<div class="call">
-				<img src="images/index_ff.png">
-			</div>
-			<div class="long"></div>
-			<p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
 		</div>
 	</div>
-	<div class="slide-nav"></div>
 </body>
 </html>
