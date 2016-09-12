@@ -3,6 +3,7 @@ $(function(){
       if($(".navList_content").css("right")=="0px"){
         $(".navList_content").animate({"right":"8rem"});
         $(".wrap_sum").css("overflow","hidden");
+        $(".navList_wrap").css("overflow","auto");
       }else{
         $(".navList_content").animate({"right":"0px"});
         $(".wrap_sum").css("overflow","auto");
