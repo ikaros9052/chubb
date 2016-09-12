@@ -147,12 +147,12 @@ text-overflow:ellipsis;}
 	line-height: 1.625rem;font-size: 0.6rem;}
 .aply_2 .box2 .sex a{display: inline-block;}
 .aply_2 .box2 .sex{font-size: 0.5rem;display: inline-block;margin-right: 1.2rem}
-.aply_2 .box2 .a_1,.aply_2 .box .active1{background: url(../images/01_09.png) no-repeat;background-size: 100%;width: 0.6rem;height: 0.6rem
+.aply_2 .box2 .a_1,.aply_2 .box .active1{background: url(../images/alpy_check02.png) no-repeat;background-size: 100%;width: 0.6rem;height: 0.6rem
 		;vertical-align: middle;margin-right: 0.125rem;}
 .aply_2 .box3{height: 5.675rem}
 .aply_2 textarea{display: block;height: 3.0rem;width: 14rem;margin-top: -0.5rem;border: none;}
 .aply_2 input{font-size: 0.55rem;}
 .aply_2 .box input.Validform_error{border: 2px solid #f24940;background-color: #fff1f1;color: #f1352b;
 		text-indent: 0.3rem; }
-.aply_2 .box .active1{background: url(../images/01_07.png) no-repeat;background-size: 100%;}
+.aply_2 .box .active1{background: url(../images/alpy_check01.png) no-repeat;background-size: 100%;}
 /*aply end*/
