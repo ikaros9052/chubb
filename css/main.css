@@ -54,7 +54,7 @@ text-overflow:ellipsis;}
 .my_warr_btn{float:right;width:3.15rem;height:1.175rem;line-height:1.175rem;text-align:center;color:#fff;background:#03C0D5;}
 .claim_row,.claim_line{ background-color: #F5F5F5;height:1.5rem; font-size: 0.45rem;}
 .claim_line{ background-color: #fff;}
-.claim_row div,.claim_line div{height:1.5rem; line-height: 1.5rem}
+#city .my_acc_add{height:1.15rem;line-height:1.15rem;}
 .claim_left,.claim_left_style{ width: 4.7rem;background-color: #E7F3F5; text-align: right; padding-right:1.075rem;}
 .claim_left_style{background-color: #F0FDFF;}
 .claim_right{ padding-left: 0.95rem;width:8.3rem;}
@@ -62,14 +62,13 @@ text-overflow:ellipsis;}
 .claim_right .prove{color:#FE6A11;margin-left: 0.375rem;}
 .claim_right .my_warr_btn{margin-top: 0.175rem;}
 .my_acc_line,.claim_line .my_acc_height{height:3.0rem;}
-.my_acc_add ul{float:left;padding:0 0.3rem;width:2.675rem;border:0.025rem solid #E4E4E4;margin-top:0.225rem;margin-right:0.45rem}
-.my_acc_add li{height:1.075rem;line-height:1.075rem;}
-.my_acc_add i{display:inline-block;margin-left:0.75rem;padding-top:0.03rem;width: 0.325rem;height:0.175rem;background:url(../images/my_acc_select.gif) no-repeat;background-size:100%;}
-.my_acc_add{background:#fff;}
+.my_acc_add{padding:0 0.3rem;width:2.675rem;border:0.025rem solid #E4E4E4;margin-top:0.17rem;margin-right:0.45rem;margin-bottom:0.17rem;background:url(../images/my_acc_select.gif) no-repeat right 0.4rem center;position:relative;}
 .my_acc_btn{margin-right:0.75rem;margin-top:0.825rem;margin-bottom:0.825rem;}
 .my_acc_btn a{float:right;text-align:center;font-size:0.6rem;}
 .my_acc_btn .cancel{width:3.1rem;height:1.4rem;line-height:1.4rem;border:0.025rem solid;color: #FF0996;margin-right:0.65rem;}
 .my_acc_btn .save{width:3.15rem;height:1.425rem;line-height:1.45rem;background:#FF0996;color:#fff;}
+.my_acc_add .m_zlxg2{position:absolute;left:-0.02rem;background:#fff; overflow-x: hidden;overflow-y: auto;white-space: nowrap;width:100%;height:4.9rem;width:3.3rem;border:1px solid #DED3C1;}
+.m_zlxg2 li{padding-left:0.25rem;line-height: 0.7rem;white-space: nowrap;color: #333333;font-size: 0.3rem;}
 /*navList*/
 .wrap_sum{ background-color: #E9E9E9;width: 100%;}
 .navList_content{ position: absolute;right:0px; background-color: #fff; width: 100%;}
@@ -134,6 +133,7 @@ text-overflow:ellipsis;}
 .success-con{margin-top: 7.75rem;text-align: center;}
 .success-con p{margin-bottom:0.35rem;color:#01c1d6;font-size: 0.65rem;}
 /*success end*/
+
 /*aply start*/
 .aply_2 h2{background: #fff;padding: 0 0.7rem;font-weight: normal;height:2.2rem;line-height: 1.4rem;}
 .aply_2 span{display: inline-block;}
