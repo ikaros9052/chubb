@@ -1,5 +1,38 @@
-
-
+body,ul,dl,dd,h1,h2,h3,h4,h5,h6,p,table{margin:0;padding:0;}
+/*reset end*/
+html{font-size: 20px;}
+body{font-family:"\5FAE\8F6F\96C5\9ED1"; color: #333;}
+button,input{font-family: "\5FAE\8F6F\96C5\9ED1";outline:none;border:0;}
+img{border: 0;}
+ul{list-style: none;}
+li{list-style:none;}
+a{text-decoration: none;color:#333;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.fr{float: right;}
+.fl{float: left;}
+.clearfix:after{content: "\200B";display: block;height: 0;clear: both;}
+.clearfix{*zoom: 1;}
+/*common end*/
+.logo{background: url(../images/logo.svg) no-repeat;background-size: 3.775rem 1.175rem;height: 1.175rem;width: 3.775rem;margin-left: 0.55rem;}
+.head{background-color: #fff;padding: 0.7rem 0 0.625rem 0;}
+.head-wrap{border-bottom:0.525rem solid #eee;}
+.head img{float: right;width:1.15rem;height: 0.85rem;margin-right: 0.725rem;}
+/*head end*/
+.bor{border-bottom: 1.125rem solid #E5E5E5;}
+.foot{background-color: #01C1D6;padding-top: 1.175rem;padding-bottom: 0.55rem;}
+.buy{width: 15.2rem;color: #fff;margin-bottom: 1.6rem;}
+.buy h1{font-size: 0.5rem;font-weight: normal;margin-bottom: 0.4rem;margin-left: 0.55rem;}
+.buy p{margin-left: 0.55rem;}
+.buy .first a{width: 48%;display: inline-block;margin-right: 0;overflow: hidden;white-space:nowrap; 
+text-overflow:ellipsis;}
+.line{border-bottom: 1px solid #80E0EB;margin-left: 0.4rem;}
+.buy p a{font-size: 0.45rem;color: #fff;margin-right: 1rem;}
+.call{margin: 0 auto;width: 14.5rem;}
+.call img{width: 14.5rem;height: 2.15rem;margin-bottom: 0.75rem;}
+.long{border-top: 1px solid #80E0EB;}
+.bottom{font-size: 0.35rem;color: #fff;width: 11.5rem;margin:0.55rem auto 0;}
+/*foot end*/
 .index .hello{height: 3.4rem;background-color: #6E27C5;padding-top: 1.375rem;padding: 1.375rem 0;border-bottom: 0.25rem solid #eee;margin: 0 auto;}
 .index .hello img{width: 2.25rem;height: 2.225rem;}
 .index .img-wrap{width: 2.25rem;margin:0 auto;}
