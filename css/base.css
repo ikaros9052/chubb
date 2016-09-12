@@ -14,7 +14,7 @@ a{text-decoration: none;color:#333;}
 .clearfix:after{content: "\200B";display: block;height: 0;clear: both;}
 .clearfix{*zoom: 1;}
 /*common end*/
-.logo{background: url(../images/index_03.png) no-repeat;background-size: 3.775rem 1.175rem;height: 1.175rem;width: 3.775rem;margin-left: 0.55rem;}
+.logo{background: url(../images/logo.svg) no-repeat;background-size: 3.775rem 1.175rem;height: 1.175rem;width: 3.775rem;margin-left: 0.55rem;}
 .head{background-color: #fff;padding: 0.7rem 0 0.625rem 0;}
 .head-wrap{border-bottom:0.525rem solid #eee;}
 .head img{float: right;width:1.15rem;height: 0.85rem;margin-right: 0.725rem;}
@@ -66,9 +66,9 @@ text-overflow:ellipsis;}
 .navList_content{ position: absolute;right:0px; background-color: #fff; width: 100%;}
 .navList_wrap{ height: 100%; position:absolute;right: 0px; top: 0px; width: 8.0rem; background-color: #4B4E53;}
 .navList{background-color: #272626; border-bottom:0.025rem solid #5D6065;}
-.navList dt,.navList dd{text-align: right;font-size: 0.5rem;height: 1.7rem; line-height:1.7rem; color: #fff;}
+.navList dt,.navList dd{text-align: right;font-size: 0.5rem;height: 1.7rem; line-height:1.7rem; color: #fff;background-size: 0.425rem 0.25rem;}
 .navList_head{padding: 0 0.675rem;background: #4B4E53 url(../images/icon_nav_down.png) 1.0rem no-repeat; background-size: 0.425rem 0.25rem;}
-.navList_up{background: #4B4E53 url(../images/icon_nav_up.png) 1.0rem no-repeat;background-size: 0.425rem 0.25rem;}
+.navList_up{background: #4B4E53 url(../images/icon_nav_up.png) 1.0rem no-repeat;}
 .navList dd{margin: 0 0.675rem; border-top:0.025rem solid #474646; margin-top: -0.025rem; display: none; color: #ccc;}
 /*navList end*/
 .my_warr .padding30{padding:0 0.75rem;}

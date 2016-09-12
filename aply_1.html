@@ -9,14 +9,40 @@
     <style type="text/css">
         .aply_2 .box2 .sex{margin-left: 1.2rem;margin-right: 0;}
         .Validform_error{padding-left:20px;background-color: #FFF1F1;border:1px solid #F24940;color:red;}
+        .aply_2 input{font-size:0.3rem;}
+        .suning{position: relative;text-indent: 1.5em;}
+        .suning:after{content:" ";position:absolute;left:0;top:50%;height:0.6rem;width:0.6rem;background-color: #F2F2F2;border:0.025rem solid #CFCFCF;border-radius:50%;transform:translateY(-50%);}
+		.box2 :checked+label:after{background-color: #fff;border-color:#66D9EF;box-shadow:inset 0 0 .1rem .1rem #66D9EF;}
+		#suning1,#suning2{display:none;}
     </style>
 </head>
 <body>
+<body class="wrap_sum clearfix">
+<!--right nav start-->
+    <div class="navList_wrap">
+    	<dl class="navList">
+    		<dt class="navList_head">保险产品</dt>
+    		<dd>“延保＋”人身意外保障</dd>
+    		<dd>意外保险</dd>
+    		<dd>家财险</dd>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">自助服务</dt>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">常见问题</dt>
+    	</dl>
+    	<dl class="navList">
+    		<dt class="navList_head">关于安达</dt>
+    	</dl>
+    </div>
+    <!--right nav end-->
+<div class="navList_content">
 <!--header start-->
 <div class="head-wrap">
     <div class="head margin clearfix">
         <div class="logo fl"></div>
-        <img src="images/btn_03.png">
+        <img src="images/btn_03.png" class="btn">
     </div>
 </div>
 <!--header end-->
@@ -26,9 +52,9 @@
         <h2>
             <span class="span_a">理赔申请：</span>
             <span class="span_b">报案人信息</span>
-            <span class="span_c"><img src="images/my_2_bg.png" /></span>
+            <span class="span_c"></span>
             <span class="span_d">账户信息</span>
-            <span class="span_c"><img src="images/my_2_bg.png" /></span>
+            <span class="span_c"></span>
             <span class="span_d">出险信息</span>
         </h2>
         <div class="box">
@@ -56,8 +82,10 @@
         </div>
         <div class="box2 box">
             <label class="label_b"><span>*</span>保险产品选择</label>
-            <div class="sex"><a href="#" class="a_1"></a>苏宁客户</div>
-            <div class="sex"><a href="#" class="a_1"></a>非苏宁客户</div>
+            <input type="radio" name="suning" id="suning1" />
+            <label class="suning" for="suning1"> 苏宁客户</label>
+            <input type="radio" name="suning" id="suning2" />
+            <label class="suning" for="suning2"> 非苏宁客户</label>
         </div>
         <div class="box2 box">
             <label class="label_b"><span>*</span>手机号码：</label>
@@ -119,18 +147,9 @@
 
 <!--footer end-->
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
 <script type="text/javascript" src="js/validform.min.js"></script>
 <script type="text/javascript">
-    //$(".registerform").Validform();  //就这一行代码！;
-    // $(".registerform").Validform({
-    // 	tiptype:function(msg,o,cssctl){
-    // 		if(!o.obj.is("form")){
-    // 			var objtip=o.obj.siblings(".Validform_checktip");
-    // 			cssctl(objtip,o.type);
-    // 			objtip.text(msg);
-    // 		}
-    // 	}
-    // })
     $('.btn_submit').click(function() {
         $('.form').submit()
     })
