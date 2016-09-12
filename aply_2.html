@@ -17,8 +17,8 @@
 	</div>
 <!--header end-->
 <!--content start-->
-<div class="aply_2" >
-	<form>
+<div class="aply_2">
+	<form class="form" action="" method="post">
 		<h2>
 			<span class="span_a">理赔申请：</span>
 			<span class="span_b">报案人信息</span>
@@ -29,7 +29,7 @@
 		</h2>
 		<div class="box">
 			<label>报案人信息：</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a" datatype="zh2-4" />
 			<button class="btn">修改</button>
 		</div>
 		<div class="box">
@@ -38,25 +38,38 @@
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>收款人名称：</label>
-			<input type="text" class="input_a" placeholder="收款人应为被保险人本人或保险人法定继承人" style="color:red" />
+			<input type="text" class="input_a" placeholder="收款人应为被保险人本人或保险人法定继承人" style="color:red"
+				datatype="zh2-4" 
+				errormsg="投保人姓名必须是2到4位中文字符！" 
+				nullmsg="姓名不能为空" 
+			 />
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>银行：</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a"
+				nullmsg="银行名称不能为空"
+				datatype="*" 
+			 />
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>分行：</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a"
+			nullmsg="银行名称不能为空"
+			datatype="*" 
+			 />
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>支行：</label>
-			<input type="text" class="input_a" />
+			<input type="text" class="input_a"
+			nullmsg="银行名称不能为空"
+			datatype="*"
+			/>
 		</div>
 		<div class="box2 box">
 			<label class="label_b"><span>*</span>银行账号：</label>
 			<input type="text" class="input_a" />
 		</div>
-		<button class="btn_b">下一步</button>
+		<button class="btn_b btn_submit">下一步</button>
 	</form>
 </div>
 <!--content end-->
@@ -83,7 +96,32 @@
 		<div class="long"></div>
 		<p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
 	</div>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/validform.min.js"></script>
+	<script src="js/rem.js"></script>
 
+	<script>
+		  	$(function() {
+				$('.btn_submit').click(function() {
+					$('.form').submit()
+				})
+				var valid = $(".form").Validform({
+					tiptype: function(msg, o, cssctl) {
+						if(o.type != 2) {
+							o.obj.val(msg);
+						}
+					},
+					datatype: {
+						"zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
+					}
+				});
+				valid.tipmsg.w["zh2-4"] = "请输入2到4个中文字符！";
+				$('.form input').focus(function(){
+					$(this).val('');
+				})
+
+			})
+		</script>
 <!--footer end-->
 </body>
 </html>

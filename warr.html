@@ -1,10 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>warr</title>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+		$(function(){
+			$("dl").hide();	
+			$(".xia-la").click(function(){
+				var $two=$(this).nextAll("dl");
+				if ($two.is(":visible")) {
+					$two.slideUp(300);
+					$(this).find('img').attr('src','images/jtB.png');
+				} else{
+					$two.slideDown(300);
+					$(this).find('img').attr('src','images/jtT.png');
+				}
+			})
+		})
+	</script>
+	<link type="text/css" rel="stylesheet" href="css/base.css">
+	<link type="text/css" rel="stylesheet" href="css/mian.css">
 </head>
 <body>
+	<div class="head-wrap">
+		<div class="head margin clearfix">
+			<div class="logo fl"></div>
+			<img src="images/btn_03.png">
+		</div>
+	</div>
+	<!--warr-->
+	<div class="warr">
+		<div class="bor-b">
+			<div class="warr-pd">
+				<div class="top clearfix">
+					<h1 class="fl">易家安心火灾险</h1>
+					<span class="fl">保单详情</span>
+				</div>
+			</div>
+		</div>
+		<!--top-->
+		<div class="bor-b">
+			<div class="pull-down">
+				<div class="clearfix warr-pd xia-la">
+					<h2 class="fl">保单及险种信息</h2>
+					<a href="#" class="fr momBtn">
+						<img src="images/jtB.png">
+					</a>
+				</div>
+				<dl class="clearfix dl-1">
+					<dt class="fl">保单号码</dt>
+					<dd class="fl">SNF000098</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">产品名称</dt>
+					<dd class="fl">火灾保险</dd>
+				</dl>
+				<dl class="clearfix dl-1">
+					<dt class="fl">起始日</dt>
+					<dd class="fl">2016/11/2</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">终止日</dt>
+					<dd class="fl">2017/11/3</dd>
+				</dl>
+				<dl class="clearfix dl-1">
+					<dt class="fl">保费类型</dt>
+					<dd class="fl">1年</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">缴费期间</dt>
+					<dd class="fl">年缴</dd>
+				</dl>
+				<dl class="clearfix dl-1">
+					<dt class="fl">保单状态</dt>
+					<dd class="fl">新单</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">保费</dt>
+					<dd class="fl">180 RMB</dd>
+				</dl>
+				<dl class="clearfix dl-1">
+					<dt class="fl">保险金额</dt>
+					<dd class="fl">500,000.00RMB</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">备注</dt>
+					<dd class="fl">/</dd>
+				</dl>
+			</div>
+		</div>
+		<!--保单及险种信息-->
+		<div class="pull-down">
+			<div class="clearfix warr-pd xia-la">
+				<h2 class="fl">投保人信息</h2>
+				<a href="#" class="fr momBtn">
+					<img src="images/jtB.png">
+				</a>
+			</div>
+			<dl class="clearfix dl-1">
+				<dt class="fl">保单号码</dt>
+				<dd class="fl">SNF000098</dd>
+			</dl>
+			<dl class="clearfix dl-2">
+				<dt class="fl">产品名称</dt>
+				<dd class="fl">火灾保险</dd>
+			</dl>
+			<dl class="clearfix dl-1">
+				<dt class="fl">起始日</dt>
+				<dd class="fl">2016/11/2</dd>
+			</dl>
+			<dl class="clearfix dl-2">
+				<dt class="fl">终止日</dt>
+				<dd class="fl">2017/11/3</dd>
+			</dl>
+			<dl class="clearfix dl-1">
+				<dt class="fl">保费类型</dt>
+				<dd class="fl">1年</dd>
+			</dl>
+		</div>
+		<!--投保人信息-->
+		<div class="bor-b">
+			<div class="pull-down">
+				<div class="clearfix warr-pd xia-la">
+					<h2 class="fl">受益人信息</h2>
+					<a href="#" class="fr momBtn">
+						<img src="images/jtB.png">
+					</a>
+				</div>
+				<dl class="clearfix dl-1">
+					<dt class="fl">姓名</dt>
+					<dd class="fl">法定</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">收益比例</dt>
+					<dd class="fl">100%</dd>
+				</dl>
+				<dl class="clearfix dl-1">
+					<dt class="fl">受益人类别</dt>
+					<dd class="fl">/</dd>
+				</dl>
+				<dl class="clearfix dl-2">
+					<dt class="fl">受益顺序</dt>
+					<dd class="fl">/</dd>
+				</dl>
+			</div>
+		</div>
+		<!--受益人信息-->
+		<div class="warr-pd">
+			<ul class="boot-btn clearfix">
+				<li><a href="#">保单下载</a></li>
+				<li><a href="#">产品条款下载</a></li>
+				<li><a href="#">申请理赔</a></li>
+				<li><a href="#" class="active">返回</a></li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="foot">
+		<div class="buy">
+			<h1>保险购买</h1>
+			<div class="line"></div>
+			<p><a href="">“爱环球”境外旅行保障计划</a><a href="">“爱环球”境外旅行保障计划</a><br><a href="">“爱环球”境外旅行保障计划</a></p>
+		</div>
+		<div class="buy">
+			<h1>自主服务</h1>
+			<div class="line"></div>
+			<p><a href="">理赔报案</a><a href="">保单查询</a><a href="">FAQ</a></p>
+		</div>
+		<div class="buy">
+			<h1>关于安达</h1>
+			<div class="line"></div>
+			<p><a href="">公司介绍</a><a href="">新闻中心</a><a href="">信息披露</a></p>
+		</div>
+		<div class="call">
+			<img src="images/index_ff.png">
+		</div>
+		<div class="long"></div>
+		<p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
+	</div>
 </body>
 </html>

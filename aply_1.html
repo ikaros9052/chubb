@@ -4,89 +4,151 @@
     <meta charset="UTF-8">
     <title>aply_1</title>
     <script src="js/rem.js"></script>
-  	<link rel="stylesheet" type="text/css" href="css/base.css">
-  	<link rel="stylesheet" type="text/css" href="css/aply_2.css">
-  	<style type="text/css">
-		.aply_2 .box2 .sex{margin-left: 1.2rem;margin-right: 0;}
-  	</style>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/aply_2.css">
+    <style type="text/css">
+        .aply_2 .box2 .sex{margin-left: 1.2rem;margin-right: 0;}
+        .Validform_error{padding-left:20px;background-color: #FFF1F1;border:1px solid #F24940;color:red;}
+    </style>
 </head>
 <body>
 <!--header start-->
-	<div class="head-wrap">
-		<div class="head margin clearfix">
-			<div class="logo fl"></div>
-			<img src="images/btn_03.png">
-		</div>
-	</div>
+<div class="head-wrap">
+    <div class="head margin clearfix">
+        <div class="logo fl"></div>
+        <img src="images/btn_03.png">
+    </div>
+</div>
 <!--header end-->
 <!--content start-->
 <div class="aply_2" >
-	<form>
-		<h2>
-			<span class="span_a">理赔申请：</span>
-			<span class="span_b">报案人信息</span>
-			<span class="span_c"><img src="images/my_2_bg.png" /></span>
-			<span class="span_d">账户信息</span>
-			<span class="span_c"><img src="images/my_2_bg.png" /></span>
-			<span class="span_d">出险信息</span>
-		</h2>
-		<div class="box">
-			<label>报案人信息：</label>
-			<input type="text" class="input_a" />
-		</div>
-		<!-- <div class="box">
-			<label>账户信息：</label>
-			<input type="text" class="input_a" />
-		</div> -->
-		<div class="box2 box">
-			<label class="label_b"><span>*</span>报案人姓名</label>
-			<input type="text" class="input_a" placeholder="" style="color:red" />
-		</div>
-		<div class="box2 box">
-			<label class="label_b"><span>*</span>保险产品选择</label>
-			<div class="sex"><a href="#" class="a_1"></a>苏宁客户</div>
+    <form class="form" action="" method="post">
+        <h2>
+            <span class="span_a">理赔申请：</span>
+            <span class="span_b">报案人信息</span>
+            <span class="span_c"><img src="images/my_2_bg.png" /></span>
+            <span class="span_d">账户信息</span>
+            <span class="span_c"><img src="images/my_2_bg.png" /></span>
+            <span class="span_d">出险信息</span>
+        </h2>
+        <div class="box">
+            <label>报案人信息：</label>
+            <input
+                    type="text" class="input_a"
+                    datatype="s6-18"
+                    nullmsg="请输入报案人信息!"
+                    errormsg="请输入不少于6位中文字符!"
+            />
+        </div>
+        <!-- <div class="box">
+            <label>账户信息：</label>
+            <input type="text" class="input_a" />
+        </div> -->
+        <div class="box2 box">
+            <label class="label_b"><span>*</span>报案人姓名</label>
+            <input
+                    type="text" class="input_a"
+                    placeholder="例：张三"
+                    datatype="zh2-4"
+                    nullmsg="请输入报案人姓名!"
+                    errormsg="请输入2到4个中文字符!"
+            />
+        </div>
+        <div class="box2 box">
+            <label class="label_b"><span>*</span>保险产品选择</label>
+            <div class="sex"><a href="#" class="a_1"></a>苏宁客户</div>
             <div class="sex"><a href="#" class="a_1"></a>非苏宁客户</div>
-		</div>
-		<div class="box2 box">
-			<label class="label_b"><span>*</span>手机号码：</label>
-			<input type="text" class="input_a" />
-		</div>
-		<div class="box2 box">
-			<label class="label_b">固定电话</label>
-			<input type="text" class="input_a" />
-		</div>
-		<div class="box2 box">
-			<label class="label_b">电子邮箱</label>
-			<input type="text" class="input_a" />
-		</div>
-		<button class="btn_b">下一步</button>
-	</form>
+        </div>
+        <div class="box2 box">
+            <label class="label_b"><span>*</span>手机号码：</label>
+            <input
+                    type="text" class="input_a"
+                    placeholder="例：18588888888"
+                    datatype="m"
+                    nullmsg="请输入手机号码!"
+                    errormsg="请输入正确手机号码!"
+            />
+        </div>
+        <div class="box2 box">
+            <label class="label_b">固定电话</label>
+            <input
+                    type="text" class="input_a"
+                    placeholder="例：8888888"
+                    datatype="n6-6"
+                    nullmsg="请输入固定电话号码!"
+                    errormsg="请输入正确的固定电话号码!"
+            />
+        </div>
+        <div class="box2 box">
+            <label class="label_b">电子邮箱</label>
+            <input
+                    type="text" class="input_a"
+                    placeholder="例：123234@qq.com"
+                    datatype="e"
+                    nullmsg="请输入邮箱账号!"
+                    errormsg="请输入正确邮箱账号!"
+            />
+        </div>
+        <button class="btn_b btn_submit">下一步</button>
+    </form>
 </div>
 <!--content end-->
 <!--footer start-->
 <div class="foot">
-		<div class="buy">
-			<h1>保险购买</h1>
-			<div class="line"></div>
-			<p><a href="">“爱环球”境外旅行保障计划</a><a href="">“爱环球”境外旅行保障计划</a><br><a href="">“爱环球”境外旅行保障计划</a></p>
-		</div>
-		<div class="buy">
-			<h1>自主服务</h1>
-			<div class="line"></div>
-			<p><a href="">理赔报案</a><a href="">保单查询</a><a href="">FAQ</a></p>
-		</div>
-		<div class="buy">
-			<h1>关于安达</h1>
-			<div class="line"></div>
-			<p><a href="">公司介绍</a><a href="">新闻中心</a><a href="">信息披露</a></p>
-		</div>
-		<div class="call">
-			<img src="images/index_ff.png">
-		</div>
-		<div class="long"></div>
-		<p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
-	</div>
+    <div class="buy">
+        <h1>保险购买</h1>
+        <div class="line"></div>
+        <p><a href="">“爱环球”境外旅行保障计划</a><a href="">“爱环球”境外旅行保障计划</a><br><a href="">“爱环球”境外旅行保障计划</a></p>
+    </div>
+    <div class="buy">
+        <h1>自主服务</h1>
+        <div class="line"></div>
+        <p><a href="">理赔报案</a><a href="">保单查询</a><a href="">FAQ</a></p>
+    </div>
+    <div class="buy">
+        <h1>关于安达</h1>
+        <div class="line"></div>
+        <p><a href="">公司介绍</a><a href="">新闻中心</a><a href="">信息披露</a></p>
+    </div>
+    <div class="call">
+        <img src="images/index_ff.png">
+    </div>
+    <div class="long"></div>
+    <p class="bottom">Copyright © 1995-2016 The Chubb Corporation   法律声明   隐私政策</p>
+</div>
 
 <!--footer end-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/validform.min.js"></script>
+<script type="text/javascript">
+    //$(".registerform").Validform();  //就这一行代码！;
+    // $(".registerform").Validform({
+    // 	tiptype:function(msg,o,cssctl){
+    // 		if(!o.obj.is("form")){
+    // 			var objtip=o.obj.siblings(".Validform_checktip");
+    // 			cssctl(objtip,o.type);
+    // 			objtip.text(msg);
+    // 		}
+    // 	}
+    // })
+    $('.btn_submit').click(function() {
+        $('.form').submit()
+    })
+    var valid = $(".form").Validform({
+        tiptype: function(msg, o, cssctl) {
+            if(o.type != 2) {
+                o.obj.val(msg);
+            }
+        },
+        datatype: {
+            "zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/
+
+        }
+    });
+    valid.tipmsg.w["zh2-4"] = "请输入2到4个中文字符！";
+    $('.form input').focus(function(){
+        $(this).val('');
+    })
+</script>
 </body>
 </html>
